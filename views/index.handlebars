@@ -1,25 +1,5 @@
-<h1>Burgers!</h1>
-
-<h2>Uneaten Burgerss!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devour}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Devoured Burgers!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devour}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
+<h1>Burger Binge!</h1>
+<br>
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -36,3 +16,26 @@
 
   <button type="submit">Add Burger</button>
 </form>
+
+<h2>Uneaten Burgers!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devour}}
+      {{this.burger_name}}
+      {{> burger/burger-block devour=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Devoured Burgers!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devour}}
+      {{this.burger_name}}
+      {{> burger/burger-block devour=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+

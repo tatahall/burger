@@ -1,3 +1,3 @@
-INSERT INTO burgers (burger_name, devour) VALUES ('Hot Mess Burger', false);
-INSERT INTO burgers (burger_name, devour) VALUES ('Lots-a Meat Burger', false);
-INSERT INTO burgers (burger_name, devour) VALUES ('The Faux-ger', false);
+INSERT INTO burgers (burger_name) VALUES ('Hot Mess Burger');
+INSERT INTO burgers (burger_name) VALUES ('Lots-a Meat Burger');
+INSERT INTO burgers (burger_name) VALUES ('The Faux-ger');

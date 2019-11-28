@@ -2,19 +2,15 @@
 $(function() {
     $(".change-devour").on("click", function(event) {
       var id = $(this).data("id");
-      var newDevour = $(this).data("newDevour");
-  
-      var newDevourState = {
-        devour: newDevour
-      };
+      var newDevour = {devour: true}
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newDevourState
+        data: newDevour
       }).then(
         function() {
-          console.log("changed devour to", newDevour);
+          //console.log("changed devour to", newDevour);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -25,9 +21,9 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      var newCat = {
+      var newBurger = {
         name: $("#bu").val().trim(),
-        sleepy: $("[name=devour]:checked").val().trim()
+        devour: $("[name=devour]:checked").val().trim()
       };
   
       // Send the POST request.
