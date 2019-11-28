@@ -6,3 +6,6 @@
     margin-top: 10px;
     background-color: goldenrod;
 }
+body{
+    background-image: url("/public/assets/images/burger.jpg");
+}
