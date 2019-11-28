@@ -1,5 +1,6 @@
 .jumbotron{
     background-image: url("/assets/images/burger3.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -7,4 +8,7 @@
 }
 #mainbox{
     margin-left: 100px;
+}
+#right{
+    margin-left: 50px;
 }
