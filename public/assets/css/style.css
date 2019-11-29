@@ -8,5 +8,10 @@
     background-color: darkgoldenrod;
     text-align: center;
     color: antiquewhite;
-
+}
+#mainrbox{
+    margin-left: 50px;
+}
+#mainlbox{
+    margin-right: 50px;
 }
