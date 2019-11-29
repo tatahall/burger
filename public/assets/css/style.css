@@ -12,6 +12,7 @@
 #mainrbox{
     margin-left: 50px;
     font-size: 20px;
+    background-color: darkred;
     }
 
 #secondrbox{
@@ -22,6 +23,8 @@
 #mainlbox{
     margin-right: 50px;
     font-size: 20px;
+    background-color: darkgreen;
+    border-left: solid black;
 }   
 #secondlbox{
     margin-right: 50px;
