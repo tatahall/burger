@@ -12,8 +12,11 @@
 #mainrbox{
     margin-left: 50px;
     font-size: 20px;
-    border: solid black;
+    color: darkgreen;
+    
 }
 #mainlbox{
     margin-right: 50px;
+    font-size: 20px;
+    color: darkred;
 }
