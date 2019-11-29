@@ -42,6 +42,7 @@
               {{#each burgers}}
               {{#if devour}}
               {{this.burger_name}}
+              {{> burger/burger-block devour=false}}
               {{/if}}
               {{/each}}
             </ul>
